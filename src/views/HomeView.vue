@@ -23,13 +23,11 @@
     </div>
     <!-- アニメーション intersectionObserver API -->
     <ScrollFadein />
-    <TestList />
   </main>
 </template>
 
 <script setup lang="ts">
 import SwiperSetting from '@/components/SwiperSetting.vue';
-import TestList from "@/components/TestList.vue";
 import ScrollFadein from "@/components/ScrollFadein.vue";
 // Import Swiper Vue.js components
 import { Swiper, SwiperSlide } from 'swiper/vue';
