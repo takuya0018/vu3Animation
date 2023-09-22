@@ -18,7 +18,7 @@ let option:{rootMargin:string} = {
 const options = ref(option);
 
 // IntersectionObserver
-const ISOSerber = new IntersectionObserver(function(e){
+const ISOServer = new IntersectionObserver(function(e){
   e.forEach(function(endpoint){
     console.log(endpoint);//true or false
     if(endpoint.isIntersecting == false){
@@ -42,7 +42,7 @@ onMounted(function() { //4
   console.log(hi.value.innerHTML);
   
   // IntersectionObserverに要素を渡す
-  ISOSerber.observe(testDom);
+  ISOServer.observe(testDom);
 });
 </script>
 
