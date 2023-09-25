@@ -58,6 +58,7 @@ onMounted(function() { //4
   opacity: 0;
   transform: translateY(100px);
 }
+// フェードインAnimation
 .blue {
   animation: changeColor 2s ease forwards;
 }
