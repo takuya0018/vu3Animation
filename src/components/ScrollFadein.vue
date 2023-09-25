@@ -9,9 +9,14 @@
 <script lang="ts" setup>
 // import文
 import { ref, onMounted } from "vue";
+// 変数
+const hello = ref(); //1
+const hi = ref();
+
 // classの初期設定
 let blue = ref(false);
 
+// intersectionObseverのオプション
 let option:{rootMargin:string} = {
   rootMargin: `0px 0px -300px 0px`
 }
@@ -34,8 +39,6 @@ const ISOServer = new IntersectionObserver(function(e){
 // }
 );
 // IntersectionObserverで使う要素をrefで紐付け
-const hello = ref(); //1
-const hi = ref();
 onMounted(function() { //4
   const testDom = hello.value;  //2
   console.log(testDom);
@@ -50,16 +53,22 @@ onMounted(function() { //4
 .ani {
   margin-top: 1000px;
   margin-bottom: 500px;
+  text-align: center;
+  font-size: 2rem;
+  opacity: 0;
+  transform: translateY(100px);
 }
 .blue {
-  animation: changeColor 5s ease-in forwards;
+  animation: changeColor 2s ease forwards;
 }
 @keyframes changeColor {
   from {
-    color: black;
+    opacity: 0;
+    transform: translateY(100px);
   }
   to {
-    color: blue;
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 </style>
