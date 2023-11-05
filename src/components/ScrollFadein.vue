@@ -4,6 +4,7 @@
     <p ref="hello" class="ani" :class="{blue}">アニメーション</p>
     <p ref="hi">こんばんわ</p>
   </div>
+  
 </template>
 
 <script lang="ts" setup>
