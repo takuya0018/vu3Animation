@@ -2,7 +2,7 @@
   <main class="container">
     <h2>オートプレイ無限ループ</h2>
     <!-- ページネーション無し無限ループ -->
-    <SwiperSetting />
+      <SwiperSetting />
     <!-- アニメーション intersectionObserver API -->
     <ScrollFadein />
   </main>
@@ -17,6 +17,7 @@ import ScrollFadein from "@/components/ScrollFadein.vue";
 <style lang="scss" scoped>
 @import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
 
+
 body {
   background-color: #2e4053;
   color: #fff;
@@ -27,9 +28,9 @@ body {
   h2 {
     text-align: center;
   }
-  .swiper{
-    width: 400px;
-    height: 400px;
+  .setting{
+    width: 100%;
+    height: 100vh;
     overflow: hidden;
     .swiper-slide{
       img {

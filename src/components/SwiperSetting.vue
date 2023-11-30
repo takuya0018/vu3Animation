@@ -41,8 +41,8 @@ const slideItems:string[] = [
 <style lang="scss">
 .swiper{
   width: 100%;
-  height: auto;
-  overflow: hidden;
+  height: 100%;
+  // overflow: hidden;
   .swiper-slide{
     img {
       width: 100%;
@@ -52,6 +52,10 @@ const slideItems:string[] = [
 }
 .swiper-button-prev {
   color: blueviolet;
+  // 矢印のサイズ変更
+  // &::after {
+  //   font-size: 20vw;
+  // }
 }
 .overNone {
   overflow: initial;
